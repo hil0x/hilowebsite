@@ -61,7 +61,6 @@ h3{
     text-decoration: 1;
 }
 #mockup{
-    display: block;
     width: 100%; /* Default: fits within the screen on larger viewports */
     max-width: 1400px; /* Sets the max width on larger screens */
     height: auto;
