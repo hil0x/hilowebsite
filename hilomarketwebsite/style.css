@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Adieu';
+    src: url('fonts/Adieu.ttf') format('truetype'); /* Added a space */
+}
+
+h1 {
+    font-family: 'Adieu', sans-serif;
+    font-size: 45px;
+    font-weight: 100;
+    margin: 20px;
+}
+
+html, body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    margin: 0;
+    margin-left: ;
+    padding: 0;
+    height: 100%; /* Ensures the viewport is contained */
+}
+body{
+    background-color: #03031D; /* Main background color */
+    background-image: radial-gradient(circle at top left, rgba(102, 102, 255, 0.35), transparent 20%),
+                      radial-gradient(circle at top right, rgba(255, 102, 255, 0.35), transparent 20%);
+    background-size: 200px 200px; /* Controls gradient size */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    font-family: 'inter', sans-serif;
+    margin: 0px;
+    height: 100vh
+}
+footer{
+    background-color: #0E0B24 ;
+    padding: 50px;
+}
+#hiloLogo {
+display: block;
+margin: 20px auto;
+height: 60px;
+}
+#launchAppButton {
+    display: inline-block;
+    background-color: #4166F4;
+    padding: 18px 50px;
+    border-radius: 10px;
+    text-decoration: 0;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+#launchAppButton:hover{
+    background-color: #B0499A;
+}
+h3{
+    font-weight: 100;
+}
+#whitepaperLink{
+    color: white;
+    font-weight: 100;
+    text-decoration: 1;
+}
+#mockup{
+    display: block;
+    width: 100%; /* Default: fits within the screen on larger viewports */
+    max-width: 1400px; /* Sets the max width on larger screens */
+    height: auto;
+}
+@media (max-width: 1400px) {
+    #mockup {
+        display: block;
+        margin-left: 20px;
+        width: 200%; /* Enlarges the image to crop it */
+        max-width: none; /* Removes default max-width so it can extend beyond 100% */
+        height: auto;
+        object-fit: cover; /* Ensures the image scales to cover the element */
+        object-position: left; /* Aligns the crop to the left side of the image */
+        overflow: hidden;
+    }
+    
+}
